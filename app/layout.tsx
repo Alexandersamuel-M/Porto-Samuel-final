@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Samuel Alexander | Workflow Architect',
-  description: 'Building Autonomous Systems. Transforming Operational Chaos into Measurable Revenue.',
+  title: 'Samuel Alexander | Remote Operations Manager | Workflow & SOP Specialists',
+  description: 'I help growing businesses organize operations, standardize workflows, and coordinate teams through structured systems, documentation, and process management.',
   generator: 'v0.app',
   icons: {
     icon: [
