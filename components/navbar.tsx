@@ -7,9 +7,12 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between px-6 py-6 bg-background">
-      {/* Samuel Alexander | Remote Operations Manager & Team Coordinator */}
-      <div className="font-bold text-lg md:text-xl truncate">
-        Samuel Alexander <span className="font-normal text-sm md:text-base text-muted-foreground hidden lg:inline-block ml-1">| Remote Operations Manager & Team Coordinator</span>
+      {/* BAGIAN NAMA & TITLE DIBAWAHNYA */}
+      <div className="flex flex-col">
+        <span className="font-bold text-lg md:text-xl">Samuel Alexander</span>
+        <span className="font-normal text-xs md:text-sm text-muted-foreground mt-0.5">
+          Remote Operations Manager & Team Coordinator
+        </span>
       </div>
       
       {/* Bagian Kanan - Deretan Menu */}
@@ -22,7 +25,6 @@ export function Navbar() {
           Impact
         </Link>
         
-        {/* Balikin pake Link bawaan Next.js aja biar rapi */}
         <Link href="#tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
           Tools
         </Link>
