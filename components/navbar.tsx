@@ -6,12 +6,14 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-6">
-      {/* Bagian Kiri - Nama */}
-      <div className="font-bold">Samuel Alexander</div>
+    <nav className="flex items-center justify-between px-6 py-6 bg-background">
+      {/* BAGIAN NAMA YG UDAH DIGEDEIN & DITAMBAHIN TITLE */}
+      <div className="font-bold text-lg md:text-xl truncate">
+        Samuel Alexander <span className="font-normal text-sm md:text-base text-muted-foreground hidden lg:inline-block ml-1">| Remote Operations Manager & Team Coordinator</span>
+      </div>
       
       {/* Bagian Kanan - Deretan Menu */}
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-8 shrink-0">
         <Link href="#solutions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
           Solutions
         </Link>
@@ -20,9 +22,10 @@ export function Navbar() {
           Impact
         </Link>
         
+        {/* Balikin pake Link bawaan Next.js aja biar rapi */}
         <Link href="#tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
           Tools
-        </a>
+        </Link>
         
         <a 
           href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" 
@@ -30,7 +33,7 @@ export function Navbar() {
           rel="noopener noreferrer" 
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
-          Curiculum Vitae
+          Curriculum Vitae
           <Download size={14} />
         </a>
 
