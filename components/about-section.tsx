@@ -3,14 +3,6 @@
 import { User } from "lucide-react";
 
 export function AboutSection() {
-  const badges = [
-    "Ready for EST TIME",
-    "Property Manager",
-    "ERP Administration",
-    "Back-Office Support",
-    "Operations Asisstant",
-  ];
-
   return (
     <section className="px-6 pb-16">
       <h2 className="text-xs font-medium text-muted-foreground tracking-widest mb-6">
@@ -22,11 +14,7 @@ export function AboutSection() {
           {/* Left Column - Profile Photo Placeholder */}
           <div className="md:w-1/3 flex justify-center md:justify-start">
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-gradient-to-br from-secondary to-border flex items-center justify-center">
-              <img 
-  src="/Foto X.jpg"
-  alt="Samuel Alexander" 
-  className="w-full h-full object-cover rounded-2xl" 
-/>              
+              <User className="w-20 h-20 text-muted-foreground/50" strokeWidth={1} />
             </div>
           </div>
 
@@ -36,28 +24,32 @@ export function AboutSection() {
               Samuel Alexander
             </h3>
             <p className="text-blue-600 font-medium mb-6">
-              Operations Manager & Business Workflow Architect
+              Remote Operations Manager & Team Coordinator
             </p>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                I provide the reliable back-office support that businesses need to keep their daily operations running smoothly. With hands-on experience handling property management administration in Bali, overseeing daily detailing workflows for Whoozh in Surabaya, and managing the operational setup for Amerta Auto Care in Bandar Lampung, I excel at organizing messy field data into structured systems.
+                I don&apos;t just manage operations—I architect them. With hands-on experience coordinating distributed teams and optimizing workflows across Surabaya, Bali, and Bandar Lampung, I understand the real friction between remote coordination and on-site execution.
               </p>
               <p>
-                My focus is on practical administration. Whether it's managing daily inputs in an ERP, maintaining standard operating procedures, or keeping remote property workflows organized, I ensure your business data is accurate and your teams know exactly what to do.
+                From standardizing SOPs to implementing vendor management systems, my focus is on designing scalable, documented processes that eliminate decision fatigue while respecting team autonomy and maximizing operational efficiency.
               </p>
             </div>
 
             {/* Badges */}
             <div className="flex flex-wrap gap-3">
-              {badges.map((badge) => (
-                <span
-                  key={badge}
-                  className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full"
-                >
-                  {badge}
-                </span>
-              ))}
+              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
+                Based in Bandar Lampung
+              </span>
+              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
+                Team Coordination
+              </span>
+              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
+                SOP Development
+              </span>
+              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
+                Process Improvement
+              </span>
             </div>
           </div>
         </div>
