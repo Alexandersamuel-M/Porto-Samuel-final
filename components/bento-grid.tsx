@@ -6,31 +6,31 @@ const specializations = [
   {
     icon: Filter,
     number: "01",
-    title: "ERP Migration Architect",
+    title: "Operations Management",
     items: [
-      "Legacy Data Cleansing & Structuring.",
-      "Zero-Downtime Odoo Deployment.",
-      "Cross-System Workflow Sync."
+      "Designing scalable processes & SOP frameworks.",
+      "Distributed team coordination across time zones.",
+      "Workflow standardization & documentation."
     ]
   },
   {
     icon: Cog,
     number: "02",
-    title: "Remote Property Operations",
+    title: "SOP Development",
       items: [
-        "PMS to On-Ground SOP Integration.",
-        "Automated Guest Lifecycle Management.",
-        "Preventive Maintenance Scheduling."
+        "Comprehensive, maintainable operating procedures.",
+        "Reducing decision fatigue and operational errors.",
+        "Process automation & team empowerment."
       ]
   },
   {
     icon: Brain,
     number: "03",
-    title: "Tech & AI Integration",
+    title: "Property & Vendor Operations",
     items: [
-      "Set Up ERP, Migration & Set Up Business Workflow",
-      "Set Up Automation & Integration on Business  .",
-      "Remote Operations Dashboards."
+      "On-site and off-site resource coordination.",
+      "Vendor management and supply chain optimization.",
+      "On-ground SOP execution & quality assurance."
     ]
   }
 ]
