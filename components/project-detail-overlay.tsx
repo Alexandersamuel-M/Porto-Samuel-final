@@ -27,7 +27,7 @@ export function ProjectDetailOverlay({ isOpen, onClose }: ProjectDetailOverlayPr
             </button>
             
             <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 text-balance">
-              NEFIUM: MARINE BIOTA E-COMMERCE & OPERATIONS
+              NEFIUM MARINE: Operational Coordination & Workflow Integration
             </h1>
             
             <div className="flex flex-wrap gap-2">
@@ -156,40 +156,61 @@ export function ProjectDetailOverlay({ isOpen, onClose }: ProjectDetailOverlayPr
           {/* Bento Section 3: P.A.R Results */}
           <div className="mb-6">
             <span className="text-xs font-mono text-muted-foreground tracking-wider mb-4 block">
-              {">"} P.A.R. (PROBLEM → ACTION → RESULT)
+              {">"} P.A.R. (PROBLEM → ACTION �� RESULT)
             </span>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              {/* Problem */}
-              <div className="bg-card rounded-2xl border border-border p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="font-mono text-xs font-bold text-foreground bg-secondary px-2 py-1 rounded">P</span>
-                  <h3 className="font-semibold text-sm text-foreground">Problem</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Managing live marine biota inventory across separate B2B and B2C channels caused operational bottlenecks and inaccurate stock tracking.
-                </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-bold text-foreground mb-3">OPERATIONAL BOTTLENECKS IDENTIFIED</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>Vendor coordination happening across WhatsApp, email, and manual spreadsheets with no audit trail.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>No standardized SOP for vessel schedules, leading to 8-12 hours of delays per shipment.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>Team uncertainty on approval chains and decision authority across three office locations.</span>
+                  </li>
+                </ul>
               </div>
 
-              {/* Action */}
-              <div className="bg-card rounded-2xl border border-border p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="font-mono text-xs font-bold text-foreground bg-secondary px-2 py-1 rounded">A</span>
-                  <h3 className="font-semibold text-sm text-foreground">Action</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Deployed a centralized e-commerce system seamlessly connected to physical quarantine SOPs and Odoo ERP.
-                </p>
+              <div>
+                <h3 className="text-lg font-bold text-foreground mb-3">ARCHITECTURE & PROCESS INTEGRATION</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>Centralized SOP documentation with role-based access and version control.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>Vendor portal with standardized booking, confirmation, and invoice workflows.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span>Approval automation reducing manual handoffs by 70%.</span>
+                  </li>
+                </ul>
               </div>
 
-              {/* Result */}
-              <div className="bg-card rounded-2xl border border-border p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="font-mono text-xs font-bold text-accent-foreground bg-accent px-2 py-1 rounded">R</span>
-                  <h3 className="font-semibold text-sm text-foreground">Result</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Streamlined multi-channel sales flow and established clear operational blueprints for quarantine technicians.
-                </p>
+              <div>
+                <h3 className="text-lg font-bold text-foreground mb-3">RESULTS & TEAM EFFICIENCY</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Processing time:</strong> 8-12 hour delays reduced to 2-3 hour SLA compliance</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Team coordination:</strong> 4 hours/week of re-work eliminated through documentation</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-primary font-bold flex-shrink-0">•</span>
+                    <span><strong>Operational confidence:</strong> 95% accuracy on first-time vendor confirmations</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
