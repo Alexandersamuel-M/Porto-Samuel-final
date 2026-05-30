@@ -35,10 +35,10 @@ export function CaseStudies() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-6">
             <span className="text-xs font-mono text-muted-foreground tracking-wider">
-              {">"} CLIENT CASE STUDIES (7 AMUNISI / P.A.R. FORMAT)
+              {">"} OPERATIONAL PROJECTS & OUTCOMES
             </span>
           </div>
-          
+
           <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
             <div className="flex gap-4">
               {caseStudies.map((study) => (
@@ -69,9 +69,9 @@ export function CaseStudies() {
         </div>
       </section>
 
-      <ProjectDetailOverlay 
-        isOpen={activeProject === "nefium"} 
-        onClose={() => setActiveProject(null)} 
+      <ProjectDetailOverlay
+        isOpen={activeProject === "nefium"}
+        onClose={() => setActiveProject(null)}
       />
     </>
   )
