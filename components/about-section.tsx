@@ -23,7 +23,7 @@ export function AboutSection() {
           <div className="md:w-1/3 flex justify-center md:justify-start">
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-gradient-to-br from-secondary to-border flex items-center justify-center">
               <img 
-  src="/sam-ganteng.webp" 
+  src="/Foto X.webp"
   alt="Samuel Alexander" 
   className="w-full h-full object-cover rounded-2xl" 
 />              
