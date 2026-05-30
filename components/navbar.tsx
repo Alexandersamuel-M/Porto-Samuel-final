@@ -30,7 +30,7 @@ export function Navbar() {
           rel="noopener noreferrer" 
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
-          CV
+          Curiculum Vitae
           <Download size={14} />
         </a>
 
