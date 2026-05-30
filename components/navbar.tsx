@@ -29,10 +29,10 @@ export function Navbar() {
               Impact
             </Link>
             <Link 
-              href="#about" 
+              href="#Tools" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              About
+              Tools
             </Link>
             <a 
               href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" 
