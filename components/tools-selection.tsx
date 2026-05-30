@@ -1,4 +1,4 @@
-export function ToolsSection() {
+export function ToolsSelection() {
   return (
     <section id="tools" className="py-24 px-6 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
