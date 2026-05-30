@@ -11,7 +11,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <span className="text-sm font-bold tracking-tight text-foreground">
-              SAMUEL ALEXANDER <span className="text-muted-foreground font-normal">|</span> <span className="font-medium text-muted-foreground">WORKFLOW ARCHITECT</span>
+              SAMUEL ALEXANDER <span className="text-muted-foreground font-normal">|</span> <span className="font-medium text-muted-foreground">REMOTE OPERATIONS MANAGER</span>
             </span>
           </div>
           
