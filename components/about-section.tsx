@@ -10,12 +10,15 @@ export function AboutSection() {
       </h2>
 
       <div className="border border-border rounded-2xl bg-card p-8 md:p-10">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
-          {/* Left Column - Profile Photo Placeholder */}
-          <div className="md:w-1/3 flex justify-center md:justify-start">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-gradient-to-br from-secondary to-border flex items-center justify-center">
-              <User className="w-20 h-20 text-muted-foreground/50" strokeWidth={1} />
-            </div>
+13:          {/* Left Column - Profile Photo Placeholder */}
+14:          <div className="md:w-1/3 flex justify-center md:justify-start">
+15:  <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden">
+  <img 
+    src="/FotoX.jpg" 
+    alt="Samuel Alexander" 
+    className="w-full h-full object-cover"
+  />
+</div>
           </div>
 
           {/* Right Column - Bio Content */}
