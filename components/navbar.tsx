@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between px-6 py-6 bg-background">
-      {/* BAGIAN NAMA YG UDAH DIGEDEIN & DITAMBAHIN TITLE */}
+      {/* Samuel Alexander | Remote Operations Manager & Team Coordinator */}
       <div className="font-bold text-lg md:text-xl truncate">
         Samuel Alexander <span className="font-normal text-sm md:text-base text-muted-foreground hidden lg:inline-block ml-1">| Remote Operations Manager & Team Coordinator</span>
       </div>
