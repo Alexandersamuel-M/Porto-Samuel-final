@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between px-6 py-6 bg-background">
-      {/* BAGIAN NAMA & TITLE DIBAWAHNYA */}
+      {/* BAGIAN NAMA & TITLE DIBAWAHNYA - UKURAN UDAH DIGEDEIN */}
       <div className="flex flex-col">
-        <span className="font-bold text-lg md:text-xl">Samuel Alexander</span>
-        <span className="font-normal text-xs md:text-sm text-muted-foreground mt-0.5">
+        <span className="font-bold text-xl md:text-2xl">Samuel Alexander</span>
+        <span className="font-normal text-sm md:text-base text-muted-foreground mt-0.5">
           Remote Operations Manager & Team Coordinator
         </span>
       </div>
