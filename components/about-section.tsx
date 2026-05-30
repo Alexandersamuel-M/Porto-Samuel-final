@@ -16,7 +16,7 @@ export function AboutSection() {
           <div className="md:w-1/3 flex justify-center md:justify-start">
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden">
               <img 
-                src="/Foto X.jpg" 
+                src="/FotoX.jpg" 
                 alt="Samuel Alexander" 
                 className="w-full h-full object-cover"
               />
