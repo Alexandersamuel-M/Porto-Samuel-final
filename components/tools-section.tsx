@@ -16,8 +16,11 @@ export function ToolsSection() {
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li>• <strong className="text-foreground font-medium">Google Workspace</strong> (Drive, Docs, Sheets)</li>
               <li>• <strong className="text-foreground font-medium">Notion</strong> (Workspace Architecture & SOPs)</li>
-              <li>• <strong className="text-foreground font-medium">ChatGPT / Claude</strong> (Workflow Automation)</li>
-              <li>• <strong className="text-foreground font-medium">Loom / Tango</strong> (Async Process Documentation)</li>
+              <li>• <strong className="text-foreground font-medium">ChatGPT / Gemini</strong> (Research & Brainstorming)</li>
+              <li>• <strong className="text-foreground font-medium">Odoo Ecosystem</strong> (Async Process Documentation)</li>
+              <li>• <strong className="text-foreground font-medium">Monday.com </strong> (Integration & Automation)</li>
+              <li>• <strong className="text-foreground font-medium">Guesty</strong> (Async Process Documentation)</li>
+              <li>• <strong className="text-foreground font-medium">OTA</strong> (Airbnb, Booking.com)</li>
             </ul>
           </div>
 
