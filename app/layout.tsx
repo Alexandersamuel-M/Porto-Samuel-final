@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { CookieBanner } from "@/components/cookie-banner";
 
 const inter = Inter({ 
   subsets: ["latin"],
