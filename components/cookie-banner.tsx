@@ -1,4 +1,3 @@
-"use function";
 "use client";
 
 import { useState, useEffect } from "react";
