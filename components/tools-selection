@@ -1,16 +1,13 @@
 export function ToolsSection() {
   return (
-    // Tambahin scroll-mt-24 biar pas di-klik nggak nabrak navbar atas
     <section id="tools" className="py-24 px-6 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold tracking-tight mb-2">Remote Operations Stack</h2>
         <p className="text-muted-foreground mb-12">
-          Systems and frameworks I utilize to architect scalable workflows and distributed team coordination.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
           
-          {/* Bagian 1: Sudah Lancar / Expert */}
           <div className="p-8 rounded-2xl bg-card border border-border">
             <h3 className="font-semibold text-lg mb-6 text-foreground flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
@@ -24,7 +21,6 @@ export function ToolsSection() {
             </ul>
           </div>
 
-          {/* Bagian 2: Sudah Bisa Tapi Belum Expert */}
           <div className="p-8 rounded-2xl bg-card border border-border">
             <h3 className="font-semibold text-lg mb-6 text-foreground flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-blue-500"></span>
@@ -38,7 +34,6 @@ export function ToolsSection() {
             </ul>
           </div>
 
-          {/* Bagian 3: Sedang Dipelajari */}
           <div className="p-8 rounded-2xl bg-card border border-border">
             <h3 className="font-semibold text-lg mb-6 text-foreground flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-500"></span>
