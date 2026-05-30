@@ -22,7 +22,7 @@ export function Navbar() {
         
         <Link href="#tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
           Tools
-        </Link>
+        </a>
         
         <a 
           href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" 
