@@ -41,7 +41,7 @@ const caseStudies = [
 export function CaseStudies() {
   const [activeProject, setActiveProject] = useState<string | null>(null)
 
- return (
+  return (
     <>
       <section id="impact" className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -51,7 +51,7 @@ export function CaseStudies() {
             </span>
           </div>
 
-          {/* BAGIAN INI YANG DIUBAH JADI GRID BIAR NGGAK KEPOTONG */}
+          {/* Grid Layout Biar Gak Kepotong */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {caseStudies.map((study) => (
               <CaseStudyCard
@@ -63,13 +63,14 @@ export function CaseStudies() {
               />
             ))}
           </div>
-          
         </div>
       </section>
 
+      {/* Komponen Overlay Dipanggil Di Sini */}
       <ProjectDetailOverlay
         projectId={activeProject}
         onClose={() => setActiveProject(null)}
       />
     </>
   )
+}
