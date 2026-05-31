@@ -41,31 +41,29 @@ const caseStudies = [
 export function CaseStudies() {
   const [activeProject, setActiveProject] = useState<string | null>(null)
 
-  return (
+ return (
     <>
       <section id="impact" className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-6">
+          <div className="mb-8">
             <span className="text-xs font-mono text-muted-foreground tracking-wider">
               {">"} OPERATIONAL PROJECTS & OUTCOMES
             </span>
           </div>
 
-          <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-            <div className="flex gap-4">
-              {caseStudies.map((study) => (
-                <CaseStudyCard
-                  key={study.id}
-                  title={study.title}
-                  icon={study.icon}
-                  result={study.result}
-                  // Sementara ini cuma Nefium yang bisa diklik buka overlay, 
-                  // nanti tinggal diganti kalau overlay yang lain udah jadi
-                  onClick={study.id === "nefium" ? () => setActiveProject("nefium") : undefined}
-                />
-              ))}
-            </div>
+          {/* BAGIAN INI YANG DIUBAH JADI GRID BIAR NGGAK KEPOTONG */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {caseStudies.map((study) => (
+              <CaseStudyCard
+                key={study.id}
+                title={study.title}
+                icon={study.icon}
+                result={study.result}
+                onClick={study.id === "nefium" ? () => setActiveProject("nefium") : undefined}
+              />
+            ))}
           </div>
+          
         </div>
       </section>
 
@@ -75,4 +73,3 @@ export function CaseStudies() {
       />
     </>
   )
-}
