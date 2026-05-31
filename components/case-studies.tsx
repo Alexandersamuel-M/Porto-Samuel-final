@@ -59,7 +59,7 @@ export function CaseStudies() {
                 title={study.title}
                 icon={study.icon}
                 result={study.result}
-                onClick={study.id === "nefium" ? () => setActiveProject("nefium") : undefined}
+                onClick={() => setActiveProject(study.id)}
               />
             ))}
           </div>
@@ -68,7 +68,7 @@ export function CaseStudies() {
       </section>
 
       <ProjectDetailOverlay
-        isOpen={activeProject === "nefium"}
+        projectId={activeProject}
         onClose={() => setActiveProject(null)}
       />
     </>
