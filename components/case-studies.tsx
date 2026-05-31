@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Car, Factory, Fish } from "lucide-react"
+import { Car, Factory, Fish, Building, TestTube } from "lucide-react"
 import { CaseStudyCard } from "./case-study-card"
 import { ProjectDetailOverlay } from "./project-detail-overlay"
 
@@ -23,6 +23,18 @@ const caseStudies = [
     title: "NEFIUM MARINE (B2B & B2C)",
     icon: Fish,
     result: "Ornamental marine biota e-commerce & quarantine operations system."
+  },
+  {
+    id: "kmana",
+    title: "KMANA VILLAS (Bali)",
+    icon: Building,
+    result: "Luxury property co-hosting operations. Standardized guest protocols & on-ground vendor coordination."
+  },
+  {
+    id: "amerta-biotech",
+    title: "AMERTA MARINE BIOTECH (R&D)",
+    icon: TestTube,
+    result: "Intensive aquaculture blueprinting. Scaled 1,300-count MVP batch execution & operational timeline mapping."
   }
 ]
 
@@ -47,23 +59,11 @@ export function CaseStudies() {
                   title={study.title}
                   icon={study.icon}
                   result={study.result}
+                  // Sementara ini cuma Nefium yang bisa diklik buka overlay, 
+                  // nanti tinggal diganti kalau overlay yang lain udah jadi
                   onClick={study.id === "nefium" ? () => setActiveProject("nefium") : undefined}
                 />
               ))}
-              <CaseStudyCard
-                title=""
-                icon={Fish}
-                result=""
-                isFaded
-                placeholder="[BUILD 4]"
-              />
-              <CaseStudyCard
-                title=""
-                icon={Fish}
-                result=""
-                isFaded
-                placeholder="[BUILD 5]"
-              />
             </div>
           </div>
         </div>
