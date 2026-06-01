@@ -11,14 +11,6 @@ export function Footer() {
             Operations Manager & Systems Thinker
           </span>
         </div>
-        
-        <div className="flex items-center gap-6">
-          <a href="mailto:samuel@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
-            <Mail className="w-5 h-5" />
-          </a>
-          {/* Nanti link LinkedIn bisa lu ganti pakai link asli lu */}
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-            <Linkedin className="w-5 h-5" />
           </a>
         </div>
       </div>

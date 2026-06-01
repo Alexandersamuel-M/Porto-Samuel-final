@@ -1,5 +1,5 @@
 // file: components/cta-section.tsx
-import { Download, Linkedin, Mail } from "lucide-react"
+import { Download, } from "lucide-react"
 
 export function CtaSection() {
   return (
@@ -26,25 +26,7 @@ export function CtaSection() {
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors"
           >
             <Download className="w-5 h-5" />
-            Download CV
-          </a>
-          
-          <a 
-            href="https://linkedin.com" // Ganti dengan link LinkedIn asli lu
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-xl font-medium hover:bg-secondary transition-colors"
-          >
-            <Linkedin className="w-5 h-5" />
-            LinkedIn
-          </a>
-          
-          <a 
-            href="mailto:samuel@example.com" // Ganti dengan email asli lu
-            className="w-full sm:w-auto flex items-center justify-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-xl font-medium hover:bg-secondary transition-colors"
-          >
-            <Mail className="w-5 h-5" />
-            Email Contact
+            Download CV      
           </a>
         </div>
       </div>
