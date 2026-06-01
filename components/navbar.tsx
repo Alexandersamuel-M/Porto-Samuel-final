@@ -98,7 +98,7 @@ export function Navbar() {
         </a>
 
         <Button asChild className="bg-[#14A800] text-white hover:bg-[#118C00] text-xs font-mono tracking-wide rounded-md">
-          <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.alexandersamuel.space/upwork" target="_blank" rel="noopener noreferrer">
             [UPWORK]
           </a>
         </Button>
