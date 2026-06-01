@@ -88,14 +88,13 @@ export function Navbar() {
         {/* END DROPDOWN MENU TOOLS */}
         
         <a 
-          href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          Curriculum Vitae
-          <Download size={14} />
-        </a>
+  href="/samuel-cv.pdf" 
+  download="CV_Samuel_Alexander.pdf"
+  className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+>
+  Curriculum Vitae
+  <Download size={14} />
+</a>
 
         <Button asChild className="bg-[#14A800] text-white hover:bg-[#118C00] text-xs font-mono tracking-wide rounded-md">
           <a href="https://www.alexandersamuel.space/upwork" target="_blank" rel="noopener noreferrer">
