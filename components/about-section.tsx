@@ -9,9 +9,9 @@ export function AboutSection() {
           {/* Bagian Foto */}
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-lg border border-border">
-              {/* Pastikan file FotoX.JPG ada di dalam folder public */}
+              {/* Pastikan file samuel.jpg ada di dalam folder public */}
               <Image 
-                src="/FotoX.jpg" 
+                src="/samuel.jpg" 
                 alt="Samuel - Operations Manager" 
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
