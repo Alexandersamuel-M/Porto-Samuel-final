@@ -1,3 +1,4 @@
+// file: components/case-studies.tsx
 "use client"
 
 import { useState } from "react"
@@ -10,19 +11,19 @@ const experienceProjects = [
     id: "card1",
     title: "Multi-Site Hospitality Operations",
     icon: Building2,
-    result: "Hospitality Property Operations"
+    result: "(Kmana Villas)"
   },
   {
     id: "card2",
     title: "Production & Process Optimization",
     icon: Factory,
-    result: "Food Production Operations"
+    result: "(Kue Kacang Arini)"
   },
   {
     id: "card3",
     title: "Logistics & Inventory Operations",
     icon: Package,
-    result: "Live Inventory & Fulfillment Operations"
+    result: "(Lampung Exotic Pets)"
   }
 ]
 
@@ -31,19 +32,19 @@ const systemProjects = [
     id: "card4",
     title: "ERP & Workflow Integration",
     icon: Workflow,
-    result: "Marine Commerce Operations System"
+    result: "(Nemo Fish Aquarium)"
   },
   {
     id: "card5",
     title: "Automotive Operations Blueprint",
     icon: Wrench,
-    result: "Service Business Operations Design"
+    result: "(Amerta Auto Care)"
   },
   {
     id: "card6",
     title: "Aquaculture Operations Architecture",
     icon: Beaker,
-    result: "R&D Facility Planning & Operations Design"
+    result: "(Amerta Marine Biotech)"
   }
 ]
 
@@ -58,7 +59,7 @@ export function CaseStudies() {
           <div>
             <div className="mb-8 border-b border-border pb-4">
               <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
-                {">"} Operational Experience
+                {">"} Category 1: Operational Experience
               </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -77,7 +78,7 @@ export function CaseStudies() {
           <div>
             <div className="mb-8 border-b border-border pb-4">
               <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
-                {">"} Operational Projects & Systems Design
+                {">"} Category 2: Operational Projects & Systems Design
               </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,3 +1,4 @@
+// file: components/project-detail-overlay.tsx
 "use client"
 
 import { ArrowLeft, Building2, Factory, Package, Workflow, Wrench, Beaker, Users, Settings } from "lucide-react"
@@ -9,7 +10,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card1": {
     type: "experience",
     title: "Multi-Site Hospitality Operations",
-    subheading: "Hospitality Property Operations",
+    subheading: "(Kmana Villas)",
     icon: Building2,
     overview: "Coordinated daily operational workflows and maintained service continuity across multiple short-term rental properties, acting as the central point between remote management and on-ground execution.",
     scope: "13 Villas, 14 Staff members, Multiple Operational Functions, Supervisor-Based Coordination.",
@@ -35,7 +36,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card2": {
     type: "experience",
     title: "Production & Process Optimization",
-    subheading: "Food Production Operations",
+    subheading: "(Kue Kacang Arini)",
     icon: Factory,
     overview: "Led the operational restructuring and workforce management of a food production facility to meet aggressive seasonal demand spikes and optimize daily output.",
     scope: "Production Operations, Quality Control (QC), Packaging, Distribution, Seasonal Capacity Scaling.",
@@ -61,7 +62,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card3": {
     type: "experience",
     title: "Logistics & Inventory Operations",
-    subheading: "Live Inventory & Fulfillment Operations",
+    subheading: "(Lampung Exotic Pets)",
     icon: Package,
     overview: "Managed complex logistics and inventory protocols for live assets, ensuring regulatory compliance, strict quarantine adherence, and timely customer fulfillment.",
     scope: "Animal Intake, Quarantine Procedures, Shipping Coordination, Inventory Tracking.",
@@ -91,7 +92,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card4": {
     type: "systems_design",
     title: "ERP & Workflow Integration",
-    subheading: "Marine Commerce Operations System",
+    subheading: "(Nemo Fish Aquarium)",
     icon: Workflow,
     context: "Designed the operational architecture to integrate a disconnected B2B/B2C supply chain, mapping workflows from e-commerce frontends to physical backend operations.",
     bottlenecks: [
@@ -123,7 +124,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card5": {
     type: "systems_design",
     title: "Automotive Operations Blueprint",
-    subheading: "Service Business Operations Design",
+    subheading: "(Amerta Auto Care)",
     icon: Wrench,
     context: "Developed the foundational operational blueprint and standardized service workflows for a premium service-based business, ensuring scalability and strict quality control.",
     bottlenecks: [
@@ -155,7 +156,7 @@ const PROJECT_DATA: Record<string, any> = {
   "card6": {
     type: "systems_design",
     title: "Aquaculture Operations Architecture",
-    subheading: "R&D Facility Planning & Operations Design",
+    subheading: "(Amerta Marine Biotech)",
     icon: Beaker,
     context: "Structured the phased operational scaling plan for an intensive R&D facility, establishing precise capacity milestones from an initial validation batch to long-term industrial execution.",
     bottlenecks: [
@@ -219,7 +220,7 @@ export function ProjectDetailOverlay({ projectId, onClose }: ProjectDetailOverla
                 <h1 className="text-3xl sm:text-4xl font-bold text-foreground text-balance tracking-tight">
                   {data.title}
                 </h1>
-                <span className="text-base font-mono text-primary mt-3 block uppercase tracking-wide">
+                <span className="text-base font-mono text-primary mt-3 block tracking-wide">
                   {data.subheading}
                 </span>
               </div>

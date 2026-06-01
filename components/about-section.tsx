@@ -1,64 +1,51 @@
-"use client";
-
-import { User } from "lucide-react";
+// file: components/about-section.tsx
+import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section className="px-6 pb-16">
-      <h2 className="text-xs font-medium text-muted-foreground tracking-widest mb-6">
-        ABOUT SAMUEL 
-      </h2>
-
-      <div className="border border-border rounded-2xl bg-card p-8 md:p-10">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-card/30 border-b border-border">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          {/* Left Column - Profile Photo */}
-          <div className="md:w-1/3 flex justify-center md:justify">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden">
-              <img 
-                src="/FotoX.jpg" 
-                alt="Samuel Alexander" 
-                className="w-full h-full object-cover"
+          {/* Kolom Foto */}
+          <div className="relative group mx-auto lg:mx-0 w-full max-w-md">
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-secondary rounded-3xl blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-secondary">
+              <Image 
+                src="/image_5f3338.jpg" 
+                alt="Samuel Alexander - Operations Manager"
+                fill
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                sizes="(max-width: 768px) 100vw, 500px"
               />
             </div>
           </div>
 
-          {/* Right Column - Bio Content */}
-          <div className="md:w-2/3 flex flex-col justify-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-              Samuel Alexander
-            </h3>
-            <p className="text-blue-600 font-medium mb-6">
-              Remote Operations Manager & Team Coordinator
-            </p>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
-              <p>
-                I don't just manage operations—I architect them. With hands-on experience coordinating distributed teams and optimizing workflows across Surabaya, Bali, and Bandar Lampung, I understand the real friction between remote coordination and on-site execution.
-              </p>
-              <p>
-                From standardizing SOPs to implementing vendor management systems, my focus is on designing scalable, documented processes that eliminate decision fatigue while respecting team autonomy and maximizing operational efficiency.
-              </p>
+          {/* Kolom Teks Profil */}
+          <div className="space-y-8">
+            <div>
+              <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
+                {">"} Operations & Execution
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-4 leading-tight">
+                From ground-level execution to operational architecture.
+              </h2>
             </div>
-
-            {/* Badges */}
-            <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
-                Based in Bandar Lampung
-              </span>
-              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
-                Team Coordination
-              </span>
-              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
-                SOP Development
-              </span>
-              <span className="px-4 py-1.5 bg-secondary text-muted-foreground text-sm rounded-full">
-                Process Improvement
-              </span>
+            
+            <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+              <p>
+                My background is rooted heavily in hands-on operations. I progressed from direct operational execution into workflow improvement, SOP optimization, and team coordination.
+              </p>
+              <p>
+                Whether it is coordinating a 14-person staff across 13 villa properties, standardizing workflows for a seasonal production peak, or mapping logistics for live inventory, my role remains the same: I am an operator who builds processes. I ensure that high-level operational planning translates smoothly into rigid on-ground execution.
+              </p>
+              <p>
+                As an Operations Manager, my focus is always on team coordination, vendor management, and identifying the structural bottlenecks that slow down daily execution. I build systems so teams can operate with clarity and standards.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
