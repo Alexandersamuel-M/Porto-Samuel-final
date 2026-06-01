@@ -1,4 +1,4 @@
-// file: components/hero.tsx
+// file: components/hero-section.tsx
 import { ArrowRight, Terminal, Network, Users, Workflow } from "lucide-react"
 
 export function Hero() {

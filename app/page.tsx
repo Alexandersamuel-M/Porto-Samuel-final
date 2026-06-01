@@ -1,7 +1,7 @@
 // file: app/page.tsx
 // (Ini untuk merangkai komponen Hero, Workflow, dan Case Studies sesuai sitemap lu)
 import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/hero-section"
 import { WorkflowPhilosophy } from "@/components/workflow-philosophy"
 import { CaseStudies } from "@/components/case-studies"
 import { Footer } from "@/components/footer"
