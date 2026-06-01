@@ -20,13 +20,12 @@ export function CtaSection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a 
-            href="/samuel-cv.pdf" // Ganti dengan link PDF CV asli lu nanti
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/samuel-cv.pdf" 
+            download="CV_Samuel_Alexander.pdf"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors"
           >
             <Download className="w-5 h-5" />
-            Download CV      
+            Download CV
           </a>
         </div>
       </div>
