@@ -1,58 +1,45 @@
-// file: components/about-section.tsx
-import Image from "next/image"
+import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-card/30 border-b border-border">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-20 bg-background text-foreground border-t border-border">
+      <div className="container mx-auto px-6 max-w-5xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
           
-          {/* Kolom Foto */}
-          <div className="relative group mx-auto lg:mx-0 w-full max-w-md">
-            <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-secondary rounded-3xl blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-secondary">
+          {/* Bagian Foto */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-lg border border-border">
+              {/* Pastikan file FotoX.JPG ada di dalam folder public */}
               <Image 
-                src="/image_5f3338.jpg" 
-                alt="Samuel Alexander - Operations Manager"
+                src="/FotoX.jpg" 
+                alt="Samuel - Operations Manager" 
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                sizes="(max-width: 768px) 100vw, 500px"
+                className="object-cover hover:scale-105 transition-transform duration-500"
+                priority
               />
             </div>
           </div>
 
-          {/* Kolom Teks Profil */}
-          <div className="space-y-8">
-            <div>
-              <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
-                {">"} Operations & Execution
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-4 leading-tight">
-                From ground-level execution to operational architecture.
-              </h2>
-            </div>
-            
-            <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
+          {/* Bagian Teks */}
+          <div className="w-full md:w-1/2 space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              About Me
+            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                My background is rooted heavily in hands-on operations. I progressed from direct operational execution into workflow improvement, SOP optimization, and team coordination.
+                Hi, I'm Samuel. As an Operations Manager and Revenue Operations (RevOps) specialist, I focus on turning chaotic workflows into streamlined, scalable systems.
               </p>
               <p>
-                Whether it is coordinating a 14-person staff across 13 villa properties, standardizing workflows for a seasonal production peak, or mapping logistics for live inventory, my role remains the same: I am an operator who builds processes. I ensure that high-level operational planning translates smoothly into rigid on-ground execution.
+                My approach is deeply rooted in structured frameworks like the Business Model Canvas and OKRs. I don't just build systems for the sake of automation; I design processes that directly impact growth, eliminate bottlenecks, and improve the bottom line.
               </p>
               <p>
-                As an Operations Manager, my focus is always on team coordination, vendor management, and identifying the structural bottlenecks that slow down daily execution. I build systems so teams can operate with clarity and standards.
+                Whether it's auditing existing operations, mapping out efficient workflows, or building scalable B2B architectures, my goal is to bridge the gap between strategy and seamless daily execution.
               </p>
-              <Image 
-                src="/FotoX.jpg" 
-                alt="Samuel - Operations Manager" 
-                width={500} 
-                height={500} 
-                className="rounded-lg shadow-md" 
-              />
             </div>
           </div>
+
         </div>
       </div>
     </section>
-  )
+  );
 }
