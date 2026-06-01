@@ -1,9 +1,11 @@
 // file: app/page.tsx
-// (Ini untuk merangkai komponen Hero, Workflow, dan Case Studies sesuai sitemap lu)
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero-section"
 import { WorkflowPhilosophy } from "@/components/workflow-philosophy"
 import { CaseStudies } from "@/components/case-studies"
+import { OperationalStack } from "@/components/operational-stack"
+import { AboutSection } from "@/components/about-section"
+import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -13,7 +15,9 @@ export default function Home() {
       <Hero />
       <WorkflowPhilosophy />
       <CaseStudies />
-      {/* Nanti kita tambahin <OperationalStack /> dan <About /> di bawah sini */}
+      <OperationalStack />
+      <AboutSection />
+      <CtaSection />
       <Footer />
     </main>
   )
