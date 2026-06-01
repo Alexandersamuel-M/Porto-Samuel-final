@@ -20,7 +20,7 @@ export function CtaSection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a 
-            href="/samuel-cv.pdf" // Ganti dengan link PDF CV asli lu nanti
+            href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" // Ganti dengan link PDF CV asli lu nanti
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors"
@@ -40,7 +40,7 @@ export function CtaSection() {
           </a>
           
           <a 
-            href="mailto:samuel@example.com" // Ganti dengan email asli lu
+            href="mailto:sama1504200@gmail.com" // Ganti dengan email asli lu
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-xl font-medium hover:bg-secondary transition-colors"
           >
             <Mail className="w-5 h-5" />
