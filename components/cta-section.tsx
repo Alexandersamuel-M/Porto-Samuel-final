@@ -20,8 +20,8 @@ export function CtaSection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a 
-            href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" // Ganti dengan link PDF CV asli lu nanti
-            target="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view"
+            href="[https://drive.google.com/uc?export=download&id=1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2](https://drive.google.com/uc?export=download&id=1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2)"
+            target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors"
           >

@@ -1,5 +1,4 @@
-// file: components/footer.tsx
-import { Mail, Linkedin } from "lucide-react"
+// file: components/footer-upwork.tsx
 
 export function Footer() {
   return (
@@ -10,8 +9,6 @@ export function Footer() {
           <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest mt-1 block">
             Operations Manager & Systems Thinker
           </span>
-        </div>
-          </a>
         </div>
       </div>
     </footer>
