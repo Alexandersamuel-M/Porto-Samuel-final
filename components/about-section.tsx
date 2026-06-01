@@ -42,6 +42,13 @@ export function AboutSection() {
               <p>
                 As an Operations Manager, my focus is always on team coordination, vendor management, and identifying the structural bottlenecks that slow down daily execution. I build systems so teams can operate with clarity and standards.
               </p>
+              <Image 
+                src="/FotoX.jpg" 
+                alt="Samuel - Operations Manager" 
+                width={500} 
+                height={500} 
+                className="rounded-lg shadow-md" 
+              />
             </div>
           </div>
         </div>
