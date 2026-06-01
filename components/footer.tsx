@@ -13,7 +13,7 @@ export function Footer() {
         </div>
         
         <div className="flex items-center gap-6">
-          <a href="mailto:samuel@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="mailto:sama1504200@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
             <Mail className="w-5 h-5" />
           </a>
           {/* Nanti link LinkedIn bisa lu ganti pakai link asli lu */}
