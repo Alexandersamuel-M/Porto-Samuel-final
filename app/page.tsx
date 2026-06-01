@@ -1,20 +1,20 @@
+// file: app/page.tsx
+// (Ini untuk merangkai komponen Hero, Workflow, dan Case Studies sesuai sitemap lu)
 import { Navbar } from "@/components/navbar"
-import { HeroSection } from "@/components/hero-section"
-import { BentoGrid } from "@/components/bento-grid"
+import { Hero } from "@/components/hero"
+import { WorkflowPhilosophy } from "@/components/workflow-philosophy"
 import { CaseStudies } from "@/components/case-studies"
-import { AboutSection } from "@/components/about-section"
-import { ToolsSection } from "@/components/tools-section"
+import { Footer } from "@/components/footer"
 
-export default function Page() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground flex flex-col">
       <Navbar />
-      <HeroSection />
-      <BentoGrid />
+      <Hero />
+      <WorkflowPhilosophy />
       <CaseStudies />
-      <AboutSection />
-      <ToolsSection />
-      
+      {/* Nanti kita tambahin <OperationalStack /> dan <About /> di bawah sini */}
+      <Footer />
     </main>
   )
 }

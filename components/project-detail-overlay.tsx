@@ -1,179 +1,188 @@
 "use client"
 
-import { ArrowLeft, Fish, BarChart3, Package, ClipboardList, Car, Factory, Building, TestTube } from "lucide-react"
+import { ArrowLeft, Building2, Factory, Package, Workflow, Wrench, Beaker, Users, Settings } from "lucide-react"
 
-// 1. KITA BIKIN DATABASE KECIL BUAT SEMUA PROJECT
 const PROJECT_DATA: Record<string, any> = {
-  "nefium": {
-    title: "NEFIUM MARINE: Operational Coordination & Workflow Integration",
-    tags: ["Odoo ERP", "Vercel", "Web Analytics", "Operations SOPs"],
-    icon: Fish,
-    bmc: {
-      target: "B2B Wholesale Exporters & B2C Marine Aquarium Enthusiasts.",
-      infra: "Synchronized e-commerce frontend with backend quarantine operations."
-    },
-    workflow: {
-      nodes: [
-        { title: "B2B/B2C E-COMMERCE", subtitle: "Customer Orders" },
-        { title: "WEB ANALYTICS", subtitle: "Traffic Tracking" },
-        { title: "ODOO INVENTORY", subtitle: "Live-Stock Sync" },
-        { title: "QUARANTINE SOP", subtitle: "Technician Protocols", isAccent: true }
-      ],
-      desc: "End-to-end automation: from web order capture to physical facility operations"
-    },
-    par: {
-      problems: [
-        "Vendor coordination happening across WhatsApp, email, and manual spreadsheets with no audit trail.",
-        "No standardized SOP for vessel schedules, leading to 8-12 hours of delays per shipment.",
-        "Team uncertainty on approval chains and decision authority across three office locations."
-      ],
-      actions: [
-        "Centralized SOP documentation with role-based access and version control.",
-        "Vendor portal with standardized booking, confirmation, and invoice workflows.",
-        "Approval automation reducing manual handoffs by 70%."
-      ],
-      results: [
-        "Processing time: 8-12 hour delays reduced to 2-3 hour SLA compliance.",
-        "Team coordination: 4 hours/week of re-work eliminated through documentation.",
-        "Operational confidence: 95% accuracy on first-time vendor confirmations."
-      ]
-    }
+  // ==========================================
+  // TEMPLATE A: OPERATIONAL EXPERIENCE
+  // ==========================================
+  "card1": {
+    type: "experience",
+    title: "Multi-Site Hospitality Operations",
+    subheading: "Hospitality Property Operations",
+    icon: Building2,
+    overview: "Coordinated daily operational workflows and maintained service continuity across multiple short-term rental properties, acting as the central point between remote management and on-ground execution.",
+    scope: "13 Villas, 14 Staff members, Multiple Operational Functions, Supervisor-Based Coordination.",
+    team: "Coordinated with on-ground supervisors, local cleaning crews, pool maintenance technicians, and third-party contractors.",
+    workflow: "Guest Booking ➔ Pre-arrival Comms ➔ Vendor Task Delegation ➔ Property Check-in/out Protocol ➔ Post-stay Feedback",
+    challenges: [
+      "Inconsistent on-ground execution leading to unpredictable turnover times between guest check-ins.",
+      "Fragmented communication with local vendors across scattered sites.",
+      "Lack of standardized incident-reporting protocols for emergency maintenance."
+    ],
+    actions: [
+      "Implemented comprehensive SOPs to bridge remote coordination with physical execution.",
+      "Centralized vendor scheduling and task delegation workflows.",
+      "Standardized communication templates to manage guest expectations and streamline operational reporting."
+    ],
+    outcomes: [
+      "Streamlined multi-site turnover processes to ensure readiness for back-to-back bookings.",
+      "Improved SLA compliance for vendor response times.",
+      "Elevated guest satisfaction metrics through proactive issue resolution."
+    ],
+    tools: ["Property Management Systems", "WhatsApp Business", "SOP Documentation", "Operational Spreadsheets"]
   },
-  "amerta": {
-    title: "AMERTA AUTO CARE: Premium Service Blueprinting & Protocol Setup",
-    tags: ["Automotive Detailing", "Chemical Formulation", "SOP Development", "Workflow Standardization"],
-    icon: Car,
-    bmc: {
-      target: "Premium motorcycle owners and automotive enthusiasts seeking high-end detailing and systematic vehicle restoration.",
-      infra: "Standardized detailing studio workflow equipped with proprietary, R&D-backed chemical formulations."
-    },
-    workflow: {
-      nodes: [
-        { title: "VEHICLE INTAKE", subtitle: "Intake Inspection" },
-        { title: "DECONTAMINATION", subtitle: "Custom Chemicals" },
-        { title: "PRECISION DETAIL", subtitle: "Rigid Workflows" },
-        { title: "FINAL QC", subtitle: "Service Delivery", isAccent: true }
-      ],
-      desc: "End-to-end service standardization: from intake inspection to premium chemical application."
-    },
-    par: {
-      problems: [
-        "Inconsistent detailing quality across the industry due to reliance on generic chemicals and non-standardized workflows.",
-        "Lack of structured facility layout causing bottlenecks during multi-step decontamination processes.",
-        "Undefined operational metrics leading to unpredictable service turnover times."
-      ],
-      actions: [
-        "Developed proprietary detailing chemicals to strictly control material costs and output quality.",
-        "Designed a highly structured facility layout and implemented rigid operational SOPs using the Business Model Canvas.",
-        "Standardized the marketing funnel and chemical inventory management ahead of the physical launch."
-      ],
-      results: [
-        "Established a highly scalable, premium service blueprint ready for physical execution.",
-        "Ensured consistent quality control, optimizing material usage and streamlining technician handoffs."
-      ]
-    }
-  },
-  "arini": {
-    title: "KUE KACANG ARINI: Seasonal Scale-Up & Operations Restructuring",
-    tags: ["F&B Operations", "Capacity Scaling", "Layout Restructuring", "Workforce Coordination"],
+  "card2": {
+    type: "experience",
+    title: "Production & Process Optimization",
+    subheading: "Food Production Operations",
     icon: Factory,
-    bmc: {
-      target: "High-volume seasonal consumers and resellers during peak holiday periods (Ramadhan and Lebaran).",
-      infra: "Scaled home-based production facility with optimized oven hardware and flexible temporary workforce integration."
-    },
-    workflow: {
-      nodes: [
-        { title: "DEMAND FORECAST", subtitle: "Target Setting" },
-        { title: "OVEN MODIFICATION", subtitle: "Hardware Setup" },
-        { title: "WORKFORCE SCALE", subtitle: "Temp Hires" },
-        { title: "MASS PRODUCTION", subtitle: "Output Execution", isAccent: true }
-      ],
-      desc: "Rapid operational scaling: overcoming physical constraints for peak seasonal demand."
-    },
-    par: {
-      problems: [
-        "Physical production constraints due to limited oven capacity restricting maximum daily output.",
-        "Inefficient workspace layout preventing seamless workflows during peak holiday demand surges.",
-        "Steep learning curve for temporary seasonal helpers, leading to potential inconsistencies."
-      ],
-      actions: [
-        "Restructured the production layout to optimize the flow of raw materials to baking and packaging stations.",
-        "Executed structural oven modifications to drastically increase per-batch output.",
-        "Developed a rapid onboarding SOP to efficiently integrate and manage temporary helpers."
-      ],
-      results: [
-        "Successfully expanded oven capacity by +300% to meet aggressive seasonal targets.",
-        "Maximized operational output during the Ramadhan/Lebaran season without compromising product consistency."
-      ]
-    }
+    overview: "Led the operational restructuring and workforce management of a food production facility to meet aggressive seasonal demand spikes and optimize daily output.",
+    scope: "Production Operations, Quality Control (QC), Packaging, Distribution, Seasonal Capacity Scaling.",
+    team: "Supervised and coordinated temporary seasonal production helpers and supply chain vendors.",
+    workflow: "Demand Forecasting ➔ Material Procurement ➔ Workforce Allocation ➔ Mass Production ➔ QC & Distribution",
+    challenges: [
+      "Physical production bottlenecks due to hardware capacity limits restricting maximum daily output.",
+      "Inefficient workspace layout preventing seamless workflows during peak demand surges.",
+      "Steep learning curve for temporary seasonal staff, risking production delays and quality drops."
+    ],
+    actions: [
+      "Restructured the production layout to optimize the flow of raw materials to packaging stations.",
+      "Coordinated structural hardware modifications to drastically increase per-batch output.",
+      "Developed a rapid onboarding and standard operating procedure for temporary workforce scaling."
+    ],
+    outcomes: [
+      "Successfully expanded hardware capacity by +300% to meet aggressive seasonal targets.",
+      "Maximized operational output during peak season without compromising quality control.",
+      "Maintained zero downtime during the high-volume production period."
+    ],
+    tools: ["Process Mapping", "Workforce Scheduling", "Hardware Modification Logging", "Inventory Control Sheets"]
   },
-  "kmana": {
-    title: "KMANA VILLAS: Remote Hospitality Operations & Guest Experience",
-    tags: ["Property Management", "Vendor Coordination", "Guest Relations", "Operations SOPs"],
-    icon: Building,
-    bmc: {
-      target: "Short-term luxury vacationers & digital nomads in the Bali region.",
-      infra: "Decentralized villa management framework synchronizing guest communications with on-ground vendors."
-    },
-    workflow: {
-      nodes: [
-        { title: "GUEST BOOKING", subtitle: "Reservation" },
-        { title: "PRE-ARRIVAL COMMS", subtitle: "Expectation Setup" },
-        { title: "ON-SITE OPS", subtitle: "Vendor Execution" },
-        { title: "POST-STAY REVIEW", subtitle: "Feedback Loop", isAccent: true }
-      ],
-      desc: "End-to-end hospitality automation: from reservation capture to on-ground vendor execution."
-    },
-    par: {
-      problems: [
-        "Inconsistent on-ground execution leading to unpredictable turnover times between guest check-ins.",
-        "Fragmented communication with local vendors across scattered locations in Bali.",
-        "Lack of standardized incident-reporting protocols for property damage or emergency maintenance."
-      ],
-      actions: [
-        "Developed comprehensive property management SOPs bridging remote coordination with physical execution.",
-        "Centralized vendor scheduling and task delegation to ensure zero-defect property handovers.",
-        "Implemented standardized guest communication templates to reduce manual response times."
-      ],
-      results: [
-        "Streamlined villa turnover processes, ensuring 100% readiness for back-to-back bookings.",
-        "Elevated guest satisfaction metrics through proactive communication and rapid issue resolution."
-      ]
-    }
+  "card3": {
+    type: "experience",
+    title: "Logistics & Inventory Operations",
+    subheading: "Live Inventory & Fulfillment Operations",
+    icon: Package,
+    overview: "Managed complex logistics and inventory protocols for live assets, ensuring regulatory compliance, strict quarantine adherence, and timely customer fulfillment.",
+    scope: "Animal Intake, Quarantine Procedures, Shipping Coordination, Inventory Tracking.",
+    team: "Coordinated with quarantine technicians, logistics partners, and customs/compliance officers.",
+    workflow: "Asset Intake ➔ Quarantine Protocol ➔ Live-Stock Sync ➔ Shipping Coordination ➔ Customer Fulfillment",
+    challenges: [
+      "High-risk inventory requiring strict adherence to operational timelines and biological constraints.",
+      "Complex shipping coordination leading to potential delays in live asset fulfillment.",
+      "Manual inventory tracking resulting in discrepancies between physical stock and digital records."
+    ],
+    actions: [
+      "Standardized the intake and quarantine standard operating procedures to minimize asset loss.",
+      "Synchronized physical inventory counts with digital tracking systems for real-time visibility.",
+      "Coordinated shipping schedules with external logistics vendors to ensure compliance and rapid transit."
+    ],
+    outcomes: [
+      "Reduced processing and fulfillment delays through strict vendor coordination.",
+      "Achieved high accuracy in live-inventory tracking.",
+      "Maintained strict operational compliance with risk management protocols."
+    ],
+    tools: ["Inventory Management Systems", "Logistics Trackers", "Compliance Checklists", "SOP Documentation"]
   },
-  "amerta-biotech": {
-    title: "AMERTA MARINE BIOTECH: Intensive System Blueprinting & R&D",
-    tags: ["R&D Operations", "System Architecture", "Project Finance", "Capacity Scaling"],
-    icon: TestTube,
-    bmc: {
-      target: "Commercial food supply chain and advanced aquaculture breeding markets.",
-      infra: "Intensive pond systems integrated with biotechnology research and controlled breeding facilities."
-    },
-    workflow: {
+
+  // ==========================================
+  // TEMPLATE B: SYSTEMS DESIGN
+  // ==========================================
+  "card4": {
+    type: "systems_design",
+    title: "ERP & Workflow Integration",
+    subheading: "Marine Commerce Operations System",
+    icon: Workflow,
+    context: "Designed the operational architecture to integrate a disconnected B2B/B2C supply chain, mapping workflows from e-commerce frontends to physical backend operations.",
+    bottlenecks: [
+      "Vendor coordination happening across fragmented channels with no central audit trail.",
+      "No standardized SOP for logistics schedules, leading to severe processing delays.",
+      "Team uncertainty on approval chains and decision authority across multiple locations."
+    ],
+    workflowMapping: {
       nodes: [
-        { title: "FACILITY BLUEPRINT", subtitle: "System Design" },
-        { title: "1,300-COUNT MVP", subtitle: "Validation Batch" },
-        { title: "R&D PRE-INDUCTION", subtitle: "Phase 1 Scaling" },
-        { title: "INDUSTRIAL SCALE", subtitle: "Mass Execution", isAccent: true }
+        { title: "E-COMMERCE FRONTEND", subtitle: "Order Capture" },
+        { title: "WEB ANALYTICS", subtitle: "Data Tracking" },
+        { title: "ERP INVENTORY", subtitle: "Stock Sync" },
+        { title: "QUARANTINE SOP", subtitle: "Physical Execution", isAccent: true }
       ],
-      desc: "Phased operational scaling: from controlled biological models to industrial-scale execution."
+      desc: "Process Integration: Bridging digital order capture with physical fulfillment execution."
     },
-    par: {
-      problems: [
-        "High initial capital risk associated with scaling unproven biological growth models.",
-        "Complex facility requirements needing precise synchronization between structural and biological constraints.",
-        "Undefined operational milestones leading to potential timeline creep for industrial scaling."
+    solution: [
+      "Architected centralized SOP documentation with role-based access and version control.",
+      "Designed a vendor portal structure with standardized booking, confirmation, and invoice workflows.",
+      "Mapped approval automation processes to reduce manual operational handoffs."
+    ],
+    expectedOutcomes: [
+      "Processing time SLA compliance significantly improved.",
+      "Elimination of manual re-work through centralized documentation and ERP integration.",
+      "High operational accuracy on first-time vendor confirmations."
+    ],
+    techStack: ["Odoo ERP", "Vercel", "Web Analytics", "Process Architecture"]
+  },
+  "card5": {
+    type: "systems_design",
+    title: "Automotive Operations Blueprint",
+    subheading: "Service Business Operations Design",
+    icon: Wrench,
+    context: "Developed the foundational operational blueprint and standardized service workflows for a premium service-based business, ensuring scalability and strict quality control.",
+    bottlenecks: [
+      "Inconsistent service execution due to the absence of standardized operating procedures.",
+      "Lack of a structured facility layout causing process bottlenecks during multi-step operations.",
+      "Undefined operational metrics making service turnover times highly unpredictable."
+    ],
+    workflowMapping: {
+      nodes: [
+        { title: "INTAKE PROTOCOL", subtitle: "Asset Inspection" },
+        { title: "DECONTAMINATION", subtitle: "Material Processing" },
+        { title: "PRECISION EXECUTION", subtitle: "Rigid Workflows" },
+        { title: "QUALITY CONTROL", subtitle: "Service Handover", isAccent: true }
       ],
-      actions: [
-        "Restructured the initial growth phase, aggressively scaling down to a highly controlled 1,300-count fish batch for the MVP.",
-        "Designed a rigid, multi-year operational timeline mapping the R&D pre-induction phase through to full industrial expansion.",
-        "Integrated project finance frameworks to audit capital efficiency during experimental phases."
+      desc: "Operational Blueprinting: End-to-end service standardization and layout optimization."
+    },
+    solution: [
+      "Designed a highly structured facility layout blueprint to optimize workflow movement.",
+      "Drafted rigid operational SOPs mapping every step of the service delivery process.",
+      "Created standardized material tracking and inventory management logs."
+    ],
+    expectedOutcomes: [
+      "Established a highly scalable, premium operational blueprint ready for physical execution.",
+      "Ensured consistent quality control and optimized operational resource usage.",
+      "Standardized service turnover predictability."
+    ],
+    techStack: ["Business Model Canvas", "Workflow Mapping", "Operational SOPs", "Inventory Logs"]
+  },
+  "card6": {
+    type: "systems_design",
+    title: "Aquaculture Operations Architecture",
+    subheading: "R&D Facility Planning & Operations Design",
+    icon: Beaker,
+    context: "Structured the phased operational scaling plan for an intensive R&D facility, establishing precise capacity milestones from an initial validation batch to long-term industrial execution.",
+    bottlenecks: [
+      "High initial capital and operational risk associated with scaling unproven biological systems.",
+      "Complex facility requirements demanding precise synchronization between physical infrastructure and operational processes.",
+      "Undefined operational milestones risking timeline creep and resource exhaustion."
+    ],
+    workflowMapping: {
+      nodes: [
+        { title: "FACILITY BLUEPRINT", subtitle: "System Architecture" },
+        { title: "1,300-COUNT MVP", subtitle: "Validation Phase" },
+        { title: "PRE-INDUCTION", subtitle: "Scaling Phase" },
+        { title: "INDUSTRIAL EXECUTION", subtitle: "Mass Operations", isAccent: true }
       ],
-      results: [
-        "Minimized initial capital exposure by locking in a precise, manageable MVP validation phase.",
-        "Established a clear, step-by-step operational roadmap ensuring foundational metrics are met before scaling."
-      ]
-    }
+      desc: "Capacity Planning: Phased scaling from controlled validation to industrial execution."
+    },
+    solution: [
+      "Aggressively constrained the initial operational scope to a highly controlled 1,300-count validation batch.",
+      "Mapped a rigid, multi-year operational timeline detailing the transition from R&D to expansion.",
+      "Integrated capacity planning frameworks to audit resource efficiency during experimental phases."
+    ],
+    expectedOutcomes: [
+      "Minimized initial operational risk through a tightly controlled, manageable validation phase.",
+      "Established a clear, step-by-step operational roadmap.",
+      "Ensured foundational operational metrics are met and documented prior to capacity scaling."
+    ],
+    techStack: ["Systems Architecture", "Capacity Planning", "Process Mapping", "Project Finance Frameworks"]
   }
 }
 
@@ -190,158 +199,181 @@ export function ProjectDetailOverlay({ projectId, onClose }: ProjectDetailOverla
 
   return (
     <div className="fixed inset-0 z-50 bg-background overflow-y-auto animate-in fade-in duration-300">
-      <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="mb-8">
+      <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          
+          <div className="mb-10 border-b border-border pb-8">
             <button 
               onClick={onClose}
-              className="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground transition-colors mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
-              BACK TO SYSTEMS
+              BACK TO PORTFOLIO
             </button>
             
-            <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 text-balance">
-              {data.title}
-            </h1>
-            
-            <div className="flex flex-wrap gap-2">
-              {data.tags.map((tag: string) => (
-                <span 
-                  key={tag}
-                  className="px-3 py-1 text-xs font-mono bg-secondary text-foreground rounded-full border border-border"
-                >
-                  {tag}
+            <div className="flex items-start gap-5 mb-2">
+              <div className="p-4 rounded-xl bg-secondary border border-border shrink-0">
+                <MainIcon className="w-7 h-7 text-foreground" />
+              </div>
+              <div>
+                <h1 className="text-3xl sm:text-4xl font-bold text-foreground text-balance tracking-tight">
+                  {data.title}
+                </h1>
+                <span className="text-base font-mono text-primary mt-3 block uppercase tracking-wide">
+                  {data.subheading}
                 </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Bento Section 1: Business Model Canvas */}
-          <div className="mb-6">
-            <span className="text-xs font-mono text-muted-foreground tracking-wider mb-4 block">
-              {">"} BUSINESS MODEL CANVAS
-            </span>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-card rounded-2xl border border-border p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-accent">
-                    <MainIcon className="w-4 h-4 text-accent-foreground" />
-                  </div>
-                  <h3 className="font-semibold text-sm text-foreground">Target Market</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {data.bmc.target}
-                </p>
-              </div>
-              <div className="bg-card rounded-2xl border border-border p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-accent">
-                    <Package className="w-4 h-4 text-accent-foreground" />
-                  </div>
-                  <h3 className="font-semibold text-sm text-foreground">Core Infrastructure</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {data.bmc.infra}
-                </p>
               </div>
             </div>
           </div>
 
-          {/* Bento Section 2: Technical Workflow */}
-          <div className="mb-6">
-            <span className="text-xs font-mono text-muted-foreground tracking-wider mb-4 block">
-              {">"} ARCHITECTURAL SCHEMATIC
-            </span>
-            <div className="bg-card rounded-2xl border border-border p-6 sm:p-8">
-              <div className="overflow-x-auto pb-2">
-                <div className="flex items-center justify-between min-w-[700px] gap-2">
-                  {data.workflow.nodes.map((node: any, index: number) => (
-                    <div key={index} className="flex items-center flex-1">
-                      <div className="flex flex-col items-center flex-1">
-                        <div className={`${node.isAccent ? 'bg-accent border-accent/50' : 'bg-secondary border-border'} border rounded-xl px-4 py-3 text-center w-full`}>
-                          <span className={`font-mono text-xs sm:text-sm font-medium ${node.isAccent ? 'text-accent-foreground' : 'text-foreground'}`}>
-                            {node.title}
-                          </span>
+          {/* ============================================================== */}
+          {/* TEMPLATE A: OPERATIONAL EXPERIENCE */}
+          {/* ============================================================== */}
+          {data.type === "experience" && (
+            <div className="space-y-10">
+              <div className="bg-card rounded-2xl border border-border p-8">
+                <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-4 block">Overview</span>
+                <p className="text-base text-foreground leading-relaxed max-w-4xl">{data.overview}</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-card rounded-2xl border border-border p-8">
+                  <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-5 block">Operational Scope</span>
+                  <div className="flex items-start gap-3">
+                    <Settings className="w-5 h-5 text-muted-foreground mt-0.5 shrink-0" />
+                    <p className="text-sm text-foreground leading-relaxed">{data.scope}</p>
+                  </div>
+                </div>
+                <div className="bg-card rounded-2xl border border-border p-8">
+                  <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-5 block">Team Structure</span>
+                  <div className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-muted-foreground mt-0.5 shrink-0" />
+                    <p className="text-sm text-foreground leading-relaxed">{data.team}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-secondary rounded-2xl border border-border p-8 text-center">
+                <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-6 block">Operational Workflow</span>
+                <p className="text-sm md:text-base font-mono text-foreground leading-relaxed">{data.workflow}</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Key Challenges</h3>
+                  <ul className="space-y-4">
+                    {data.challenges.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Actions & Improvements</h3>
+                  <ul className="space-y-4">
+                    {data.actions.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Outcomes</h3>
+                  <ul className="space-y-4">
+                    {data.outcomes.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                 <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-4 block">Tools & Systems Used</span>
+                 <div className="flex flex-wrap gap-3">
+                    {data.tools.map((tag: string) => (
+                      <span key={tag} className="px-4 py-2 text-xs font-mono bg-secondary text-foreground rounded-lg border border-border">
+                        {tag}
+                      </span>
+                    ))}
+                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* ============================================================== */}
+          {/* TEMPLATE B: SYSTEMS DESIGN PROJECT */}
+          {/* ============================================================== */}
+          {data.type === "systems_design" && (
+            <div className="space-y-10">
+              <div className="bg-card rounded-2xl border border-border p-8">
+                 <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-4 block">Business Context</span>
+                 <p className="text-base text-foreground leading-relaxed max-w-4xl">{data.context}</p>
+              </div>
+
+              <div className="bg-card rounded-2xl border border-border p-8 sm:p-10">
+                 <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-8 block">Architecture Diagram & Workflow Mapping</span>
+                 <div className="overflow-x-auto pb-6">
+                  <div className="flex items-center justify-between min-w-[700px] gap-2">
+                    {data.workflowMapping.nodes.map((node: any, index: number) => (
+                      <div key={index} className="flex items-center flex-1">
+                        <div className="flex flex-col items-center flex-1">
+                          <div className={`${node.isAccent ? 'bg-primary/10 border-primary' : 'bg-secondary border-border'} border rounded-xl px-5 py-4 text-center w-full shadow-sm`}>
+                            <span className={`font-mono text-xs sm:text-sm font-bold ${node.isAccent ? 'text-primary' : 'text-foreground'}`}>
+                              {node.title}
+                            </span>
+                          </div>
+                          <span className="text-[11px] text-muted-foreground mt-3 text-center uppercase tracking-wider">{node.subtitle}</span>
                         </div>
-                        <span className="text-[10px] text-muted-foreground mt-2 text-center">
-                          {node.subtitle}
-                        </span>
+                        {index < data.workflowMapping.nodes.length - 1 && (
+                          <div className="h-px bg-border flex-shrink-0 w-10 relative mx-3">
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[5px] border-l-muted-foreground border-y-[3px] border-y-transparent" />
+                          </div>
+                        )}
                       </div>
-                      
-                      {/* Connector - Don't show after the last node */}
-                      {index < data.workflow.nodes.length - 1 && (
-                        <div className="h-px bg-border flex-shrink-0 w-8 relative mx-2">
-                          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-l-4 border-l-muted-foreground border-y-2 border-y-transparent" />
-                        </div>
-                      )}
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                </div>
+                <p className="text-xs font-mono text-muted-foreground mt-6 text-center">{data.workflowMapping.desc}</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Operational Bottlenecks</h3>
+                  <ul className="space-y-4">
+                    {data.bottlenecks.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Proposed Solution</h3>
+                  <ul className="space-y-4">
+                    {data.solution.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-sm font-bold text-foreground mb-5 uppercase tracking-wide">Expected Outcomes</h3>
+                  <ul className="space-y-4">
+                    {data.expectedOutcomes.map((item: string, i: number) => (
+                      <li key={i} className="flex gap-3 text-sm text-muted-foreground leading-relaxed"><span className="text-primary font-bold">•</span>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
-              <p className="text-xs text-muted-foreground mt-6 text-center">
-                {data.workflow.desc}
-              </p>
-            </div>
-          </div>
-
-          {/* Bento Section 3: P.A.R Results */}
-          <div className="mb-6">
-            <span className="text-xs font-mono text-muted-foreground tracking-wider mb-4 block">
-              {">"} P.A.R. (PROBLEM → ACTION ➔ RESULT)
-            </span>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-3">OPERATIONAL BOTTLENECKS IDENTIFIED</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {data.par.problems.map((item: string, i: number) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-3">ARCHITECTURE & PROCESS INTEGRATION</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {data.par.actions.map((item: string, i: number) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-3">RESULTS & TEAM EFFICIENCY</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {data.par.results.map((item: string, i: number) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+              <div className="pt-4">
+                 <span className="text-xs font-mono text-muted-foreground tracking-widest uppercase mb-4 block">Technology Stack</span>
+                 <div className="flex flex-wrap gap-3">
+                    {data.techStack.map((tag: string) => (
+                      <span key={tag} className="px-4 py-2 text-xs font-mono bg-secondary text-foreground rounded-lg border border-border">
+                        {tag}
+                      </span>
+                    ))}
+                 </div>
               </div>
             </div>
-          </div>
+          )}
 
-          {/* Visual Placeholder */}
-          <div className="bg-card rounded-2xl border border-border p-8">
-            <div className="aspect-video rounded-xl bg-gradient-to-br from-secondary via-muted to-secondary flex items-center justify-center">
-              <div className="text-center">
-                <BarChart3 className="w-12 h-12 text-muted-foreground/40 mx-auto mb-3" />
-                <span className="font-mono text-sm text-muted-foreground/60">
-                  [SYSTEM DASHBOARD PREVIEW]
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

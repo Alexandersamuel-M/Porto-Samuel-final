@@ -1,35 +1,45 @@
-import { LucideIcon } from "lucide-react"
+"use client"
+import { LucideIcon, ArrowUpRight } from "lucide-react"
 
 interface CaseStudyCardProps {
   title: string
   icon: LucideIcon
   result: string
-  isFaded?: boolean
-  placeholder?: string
   onClick?: () => void
 }
 
-export function CaseStudyCard({ title, icon: Icon, result, isFaded = false, placeholder, onClick }: CaseStudyCardProps) {
-  if (isFaded && placeholder) {
-    return (
-      <div className="flex-shrink-0 w-[200px] bg-card/50 rounded-2xl border border-border/50 p-5 flex items-center justify-center">
-        <span className="font-mono text-sm text-muted-foreground/50">{placeholder}</span>
-      </div>
-    )
-  }
-
+export function CaseStudyCard({ title, icon: Icon, result, onClick }: CaseStudyCardProps) {
   return (
     <div 
       onClick={onClick}
-      className={`flex-shrink-0 w-[280px] bg-card rounded-2xl border border-border p-5 hover:border-foreground/20 transition-colors duration-300 group ${onClick ? 'cursor-pointer' : ''}`}
+      className="group flex flex-col p-8 bg-card hover:bg-secondary/50 border border-border rounded-2xl cursor-pointer transition-all duration-300 relative overflow-hidden h-full"
     >
-      <div className="flex items-center gap-3 mb-3">
-        <div className="p-2 rounded-lg bg-secondary">
-          <Icon className="w-4 h-4 text-foreground" />
+      {/* Icon Section */}
+      <div className="mb-6">
+        <div className="inline-flex p-3 rounded-xl bg-secondary border border-border group-hover:bg-background transition-colors">
+          <Icon className="w-6 h-6 text-foreground" />
         </div>
-        <h3 className="font-semibold text-sm text-foreground leading-tight">{title}</h3>
       </div>
-      <p className="text-xs text-muted-foreground leading-relaxed">{result}</p>
+
+      {/* Content Section - Strict Hierarchy Rule Applied */}
+      <div className="mt-auto space-y-4">
+        {/* Capability (Title) - Most prominent */}
+        <h3 className="text-xl font-bold text-foreground leading-tight tracking-tight pr-6">
+          {title}
+        </h3>
+        
+        {/* Industry/Subheading (Result) - Secondary visual weight */}
+        <div className="inline-flex items-center">
+          <span className="text-xs font-mono text-muted-foreground uppercase tracking-wider bg-background/50 px-2.5 py-1 rounded-md border border-border">
+            {result}
+          </span>
+        </div>
+      </div>
+
+      {/* Hover Arrow Indicator */}
+      <div className="absolute top-8 right-8 opacity-0 -translate-y-2 translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-300">
+        <ArrowUpRight className="w-5 h-5 text-muted-foreground" />
+      </div>
     </div>
   )
 }

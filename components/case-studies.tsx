@@ -1,40 +1,49 @@
 "use client"
 
 import { useState } from "react"
-import { Car, Factory, Fish, Building, TestTube } from "lucide-react"
+import { Building2, Factory, Package, Workflow, Wrench, Beaker } from "lucide-react"
 import { CaseStudyCard } from "./case-study-card"
 import { ProjectDetailOverlay } from "./project-detail-overlay"
 
-const caseStudies = [
+const experienceProjects = [
   {
-    id: "amerta",
-    title: "AMERTA AUTO CARE (Bandar Lampung)",
-    icon: Car,
-    result: "Premium service blueprinting & operational protocol setup."
+    id: "card1",
+    title: "Multi-Site Hospitality Operations",
+    icon: Building2,
+    result: "Hospitality Property Operations"
   },
   {
-    id: "arini",
-    title: "KUE KACANG ARINI (Scale-up)",
+    id: "card2",
+    title: "Production & Process Optimization",
     icon: Factory,
-    result: "Oven modification & layout restructuring. +300% Capacity."
+    result: "Food Production Operations"
   },
   {
-    id: "nefium",
-    title: "NEFIUM MARINE (B2B & B2C)",
-    icon: Fish,
-    result: "Ornamental marine biota e-commerce & quarantine operations system."
+    id: "card3",
+    title: "Logistics & Inventory Operations",
+    icon: Package,
+    result: "Live Inventory & Fulfillment Operations"
+  }
+]
+
+const systemProjects = [
+  {
+    id: "card4",
+    title: "ERP & Workflow Integration",
+    icon: Workflow,
+    result: "Marine Commerce Operations System"
   },
   {
-    id: "kmana",
-    title: "KMANA VILLAS (Bali)",
-    icon: Building,
-    result: "Luxury property co-hosting operations. Standardized guest protocols & on-ground vendor coordination."
+    id: "card5",
+    title: "Automotive Operations Blueprint",
+    icon: Wrench,
+    result: "Service Business Operations Design"
   },
   {
-    id: "amerta-biotech",
-    title: "AMERTA MARINE BIOTECH (R&D)",
-    icon: TestTube,
-    result: "Intensive aquaculture blueprinting. Scaled 1,300-count MVP batch execution & operational timeline mapping."
+    id: "card6",
+    title: "Aquaculture Operations Architecture",
+    icon: Beaker,
+    result: "R&D Facility Planning & Operations Design"
   }
 ]
 
@@ -43,30 +52,50 @@ export function CaseStudies() {
 
   return (
     <>
-      <section id="impact" className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
-            <span className="text-xs font-mono text-muted-foreground tracking-wider">
-              {">"} OPERATIONAL PROJECTS & OUTCOMES
-            </span>
+      <section id="impact" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto space-y-20">
+          
+          <div>
+            <div className="mb-8 border-b border-border pb-4">
+              <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
+                {">"} Operational Experience
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {experienceProjects.map((study) => (
+                <CaseStudyCard
+                  key={study.id}
+                  title={study.title}
+                  icon={study.icon}
+                  result={study.result}
+                  onClick={() => setActiveProject(study.id)}
+                />
+              ))}
+            </div>
           </div>
 
-          {/* Grid Layout Biar Gak Kepotong */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {caseStudies.map((study) => (
-              <CaseStudyCard
-                key={study.id}
-                title={study.title}
-                icon={study.icon}
-                result={study.result}
-                onClick={() => setActiveProject(study.id)}
-              />
-            ))}
+          <div>
+            <div className="mb-8 border-b border-border pb-4">
+              <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase">
+                {">"} Operational Projects & Systems Design
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {systemProjects.map((study) => (
+                <CaseStudyCard
+                  key={study.id}
+                  title={study.title}
+                  icon={study.icon}
+                  result={study.result}
+                  onClick={() => setActiveProject(study.id)}
+                />
+              ))}
+            </div>
           </div>
+
         </div>
       </section>
 
-      {/* Komponen Overlay Dipanggil Di Sini */}
       <ProjectDetailOverlay
         projectId={activeProject}
         onClose={() => setActiveProject(null)}
