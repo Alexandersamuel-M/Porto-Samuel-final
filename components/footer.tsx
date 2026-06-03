@@ -8,7 +8,7 @@ export function Footer() {
         <div className="text-center md:text-left">
           <span className="font-bold text-foreground block">Samuel Alexander</span>
           <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest mt-1 block">
-            Operations Manager & Systems Thinker
+            Operations Manager & Team Coordinator
           </span>
         </div>
         
