@@ -27,7 +27,7 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hi, I'm Samuel. As an Operations Manager and Revenue Operations (RevOps) specialist, I focus on turning chaotic workflows into streamlined, scalable systems.
+                Hi, I'm Samuel. As an Operations Manager, I focus on turning chaotic workflows into streamlined, scalable systems.
               </p>
               <p>
                 My approach is deeply rooted in structured frameworks like the Business Model Canvas and OKRs. I don't just build systems for the sake of automation; I design processes that directly impact growth, eliminate bottlenecks, and improve the bottom line.

@@ -11,7 +11,7 @@ const experienceProjects = [
     id: "card1",
     title: "Multi-Site Hospitality Operations",
     icon: Building2,
-    result: "(Kmana Villas)"
+    result: "(Bali Villa Management)"
   },
   {
     id: "card2",

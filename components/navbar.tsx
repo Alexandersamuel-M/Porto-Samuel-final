@@ -59,7 +59,7 @@ export function Navbar() {
                 className="px-4 py-2.5 text-sm text-muted-foreground hover:bg-accent hover:text-foreground transition-colors"
                 onClick={() => setIsToolsOpen(false)}
               >
-                HubSpot (CRM)
+                PMS (OTA)
               </Link>
               <Link 
                 href="#odoo" 
@@ -80,7 +80,7 @@ export function Navbar() {
                 className="px-4 py-2.5 text-sm text-muted-foreground hover:bg-accent hover:text-foreground transition-colors"
                 onClick={() => setIsToolsOpen(false)}
               >
-                Notion (SOPs)
+                Monday.com (workflow)
               </Link>
             </div>
           )}

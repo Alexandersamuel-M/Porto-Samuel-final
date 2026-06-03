@@ -3,14 +3,14 @@ import { FileText, Database, MessageSquare, Table2, PieChart, Globe } from "luci
 
 const stacks = [
   {
-    capability: "Operations Documentation",
-    tool: "Notion",
+    capability: "Operations Workflow",
+    tool: "Monday.com",
     icon: FileText,
     uses: ["SOP Documentation", "Knowledge Base", "Process Documentation", "Project Tracking"]
   },
   {
-    capability: "ERP & Workflow Management",
-    tool: "Odoo ERP",
+    capability: "ERP & Sales Pipeline",
+    tool: "Odoo ",
     icon: Database,
     uses: ["CRM Workflow", "Inventory Management", "Sales Pipeline Mapping", "Process Architecture", "Workflow Automation"]
   },

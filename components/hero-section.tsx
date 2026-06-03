@@ -3,7 +3,7 @@ import { ArrowRight, Terminal, CheckCircle2 } from "lucide-react"
 
 export function Hero() {
   const capabilityChips = [
-    "13 Villas Managed",
+    "13 Properties Managed",
     "14 Staff Coordinated",
     "SOP Development",
     "Vendor Management",
