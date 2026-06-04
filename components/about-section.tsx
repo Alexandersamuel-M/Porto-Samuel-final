@@ -33,7 +33,7 @@ export function AboutSection() {
                 My focus is not simply ensuring today's work gets done. I build structured processes that continue to perform reliably as workload, team size, and operational complexity grow.
               </p>
               <p>
-                WWhether coordinating distributed teams, improving operational workflows, or documenting repeatable systems, I aim to create clarity, accountability, and consistency across every stage of execution.
+                Whether coordinating distributed teams, improving operational workflows, or documenting repeatable systems, I aim to create clarity, accountability, and consistency across every stage of execution.
               </p>
             </div>
           </div>
