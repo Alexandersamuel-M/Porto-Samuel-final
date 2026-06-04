@@ -27,13 +27,13 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hi, I'm Samuel. As an Operations Manager, I focus on turning chaotic workflows into streamlined, scalable systems.
+                Hi, I'm Samuel. I work at the intersection of day-to-day operations and process improvement. My experience spans team coordination, vendor management, SOP development, and workflow implementation that makes operations easier to execute, monitor, and scale.
               </p>
               <p>
-                My approach is deeply rooted in structured frameworks like the Business Model Canvas and OKRs. I don't just build systems for the sake of automation; I design processes that directly impact growth, eliminate bottlenecks, and improve the bottom line.
+                My focus is not simply ensuring today's work gets done. I build structured processes that continue to perform reliably as workload, team size, and operational complexity grow.
               </p>
               <p>
-                Whether it's auditing existing operations, mapping out efficient workflows, or building scalable B2B architectures, my goal is to bridge the gap between strategy and seamless daily execution.
+                WWhether coordinating distributed teams, improving operational workflows, or documenting repeatable systems, I aim to create clarity, accountability, and consistency across every stage of execution.
               </p>
             </div>
           </div>
