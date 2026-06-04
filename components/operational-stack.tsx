@@ -16,7 +16,7 @@ const stacks = [
   },
   {
     capability: "Team Communication & Coordination",
-    tool: "WhatsApp",
+    tool: "WhatsApp", 
     icon: MessageSquare,
     uses: ["Team Coordination", "Vendor Communication", "Escalation Management", "Daily Operational Reporting"]
   },
