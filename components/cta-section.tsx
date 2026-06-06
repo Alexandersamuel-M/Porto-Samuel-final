@@ -29,14 +29,13 @@ export function CtaSection() {
           </a>
           
           <a 
-            href="https://linkedin.com" // Ganti dengan link LinkedIn asli lu
+            href="https://www.linkedin.com/in/samuel-alexander-marolop-79489b240/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-xl font-medium hover:bg-secondary transition-colors"
           >
             <Linkedin className="w-5 h-5" />
             LinkedIn
-          </a>
           
           <a 
             href="mailto:sama1504200@gmail.com" // Ganti dengan email asli lu
