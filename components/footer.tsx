@@ -15,7 +15,7 @@ export function Footer() {
         <div className="flex items-center gap-6">
           <a href="mailto:sama1504200@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
             <Mail className="w-5 h-5" />
-          <a 
+          </a>
             href="https://www.linkedin.com/in/samuel-alexander-marolop-79489b240/"
             target="_blank"
             rel="noopener noreferrer"
