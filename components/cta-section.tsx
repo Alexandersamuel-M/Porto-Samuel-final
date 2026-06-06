@@ -3,8 +3,8 @@ import { Download, Linkedin, Mail } from "lucide-react"
 
 export function CtaSection() {
   return (
-
-<div className="max-w-4xl mx-auto text-center space-y-8">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-border bg-secondary/30">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
         <div>
           <span className="text-sm font-mono text-muted-foreground tracking-widest uppercase block mb-4">
             {">"} Next Steps
@@ -20,7 +20,7 @@ export function CtaSection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a 
-            href="/samuel-cv.pdf" 
+            href="/samuel-cv.pdf?v=2" 
             download="CV_Samuel_Alexander.pdf"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors"
           >
@@ -36,9 +36,10 @@ export function CtaSection() {
           >
             <Linkedin className="w-5 h-5" />
             LinkedIn
+          </a>
           
           <a 
-            href="mailto:sama1504200@gmail.com" // Ganti dengan email asli lu
+            href="mailto:sama1504200@gmail.com" 
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-xl font-medium hover:bg-secondary transition-colors"
           >
             <Mail className="w-5 h-5" />

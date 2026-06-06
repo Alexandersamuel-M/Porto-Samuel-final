@@ -16,11 +16,8 @@ export function Footer() {
           <a href="mailto:sama1504200@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
             <Mail className="w-5 h-5" />
           </a>
-            href="https://www.linkedin.com/in/samuel-alexander-marolop-79489b240/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
+          
+          <a href="https://www.linkedin.com/in/samuel-alexander-marolop-79489b240/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Linkedin className="w-5 h-5" />
           </a>
         </div>
