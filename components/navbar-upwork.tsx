@@ -88,7 +88,7 @@ export function Navbar() {
         {/* END DROPDOWN MENU TOOLS */}
         
         <a 
-          href="https://drive.google.com/file/d/1DCZVD5GPS6cV0raADHoHaiVDIDTU-ya2/view" 
+          href="/samuel-cv.pdf?v=2" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
