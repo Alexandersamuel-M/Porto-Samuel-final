@@ -13,6 +13,28 @@ export const metadata: Metadata = {
   title: 'Samuel Alexander | Remote Operations Manager | Workflow & SOP Specialists',
   description: 'I help growing businesses organize operations, standardize workflows, and coordinate teams through structured systems, documentation, and process management.',
   generator: 'v0.app',
+  keywords: [
+    "Samuel Alexander",
+    "Operations Manager",
+    "Systems Builder",
+    "RevOps",
+    "Team Coordinator",
+    "Process Improvement",
+    "HubSpot",
+    "Indonesia"
+  ],
+  openGraph: {
+    title: 'Samuel Alexander | Remote Operations Manager',
+    description: 'I help growing businesses organize operations, standardize workflows, and coordinate teams through structured systems.',
+    url: 'https://alexandersamuel.space',
+    siteName: 'Samuel Alexander Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       {
@@ -34,6 +56,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className="bg-background" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased`}>
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
+    </html>
+  )
+}
 }: Readonly<{
   children: React.ReactNode
 }>) {
